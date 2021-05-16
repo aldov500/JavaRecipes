@@ -2,6 +2,11 @@
 import JavaRecipes.Recipe;
 import JavaRecipes.Ingredient;
 
+// Prototipo 01 
+// Aplicacion que te otorga una lista de compras dependiendo de los platillos que elijas
+// Prototipo 02
+// Aplicacion que te otorga una lista de compras dependiendo de los platillos basado en tus productos actuales
+
 public class Main {
 
 	public static void main(String[] args) {
