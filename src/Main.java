@@ -1,6 +1,4 @@
-
-import JavaRecipes.Recipe;
-import JavaRecipes.Ingredient;
+import Application.DatabaseController;
 
 // Prototipo 01 
 // Aplicacion que te otorga una lista de compras dependiendo de los platillos que elijas
@@ -11,9 +9,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
+		DatabaseController base = new DatabaseController();
+		base.connect();
+		base.disconnect();
+		return;
+
+		/*
 		Recipe caldoDePollo = new Recipe("Caldo de Pollo");
-	
+
 		caldoDePollo.addIngredient(new Ingredient(1.0f, "Pieza completa", "Pollo"));
 		caldoDePollo.addIngredient(new Ingredient(8.0f, "Tazas", "Agua"));
 		caldoDePollo.addIngredient(new Ingredient("Sal","Pollo entero crudo", 2, "cucharaditas"));
@@ -23,14 +27,15 @@ public class Main {
 		caldoDePollo.addIngredient(new Ingredient("Perejil","Pollo entero crudo", 3, "ramas"));
 		caldoDePollo.addIngredient(new Ingredient("Zanahoria","Pollo entero crudo", 3, "cortadas"));
 		caldoDePollo.addIngredient(new Ingredient("Cilantro","Pollo entero crudo", 2, "ramas"));
-		
-		caldoDePollo.setInstructions("Echa el pollo, el agua y la sal en una olla grande, y empieza a cocinar a temperatura media alta hasta que suelte el hervor. Una vez que suelte el hervor se formará espuma en la superficie; procede a removerla y desecharla.\r\n"
-				+ "Después de quitar la espuma, agrega la cebolla, el ajo y el apio, y cubre la olla parcialmente. Baja la temperatura y cocina lentamente por aprox. 30 minutos sin dejarlo que hierva.\r\n"
-				+ "Agrega las zanahorias y el cilantro. En este momento verifica si el pollo ya está cocido y tierno. Si ya está cocido, retíralo y pónlo en un recipiente aparte.\r\n"
-				+ "Sigue cocinando el caldo por 10 minutos más hasta que las zanahorias estén completamente cocidas.\r\n"
-				+ "Cuando las piezas del pollo no estén tan calientes, deshébralas o pártelas en pedazos pequeños. Cuando las zanahorias ya estén cocidas, pártelas en cubos y sepáralas.");
-		
+
+		caldoDePollo.setInstructions("Echa el pollo, el agua y la sal en una olla grande, y empieza a cocinar a temperatura media alta hasta que suelte el hervor. Una vez que suelte el hervor se formarï¿½ espuma en la superficie; procede a removerla y desecharla.\r\n"
+				+ "Despuï¿½s de quitar la espuma, agrega la cebolla, el ajo y el apio, y cubre la olla parcialmente. Baja la temperatura y cocina lentamente por aprox. 30 minutos sin dejarlo que hierva.\r\n"
+				+ "Agrega las zanahorias y el cilantro. En este momento verifica si el pollo ya estï¿½ cocido y tierno. Si ya estï¿½ cocido, retï¿½ralo y pï¿½nlo en un recipiente aparte.\r\n"
+				+ "Sigue cocinando el caldo por 10 minutos mï¿½s hasta que las zanahorias estï¿½n completamente cocidas.\r\n"
+				+ "Cuando las piezas del pollo no estï¿½n tan calientes, deshï¿½bralas o pï¿½rtelas en pedazos pequeï¿½os. Cuando las zanahorias ya estï¿½n cocidas, pï¿½rtelas en cubos y sepï¿½ralas.");
+
 		System.out.println(caldoDePollo.getFullDescription());
+		* */
 	}
 
 }
