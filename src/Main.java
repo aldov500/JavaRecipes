@@ -1,4 +1,4 @@
-import Application.DatabaseController;
+import JavaRecipes.DataManager;
 
 // Prototipo 01 
 // Aplicacion que te otorga una lista de compras dependiendo de los platillos que elijas
@@ -10,9 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		DatabaseController base = new DatabaseController();
-		base.connect();
-		base.disconnect();
+		DataManager d = new DataManager();
 		return;
 
 		/*

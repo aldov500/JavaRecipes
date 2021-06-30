@@ -3,13 +3,19 @@ public class Ingredient {
     private String name;
     private String description;
     private float portion;
-    private String portionLabel ;
+    private String portion_label ;
+    private String store_name;
+    private String category;
+    private float min_stock;
 
     public Ingredient(){
         name = "New Ingredient";
         description = "this is the description";
         portion = 100.00f;
-        portionLabel = "gramos";
+        portion_label = "gramos";
+        store_name = "store";
+        category = "ingredients";
+        min_stock = 10;
     }
     public Ingredient(String name, String description){
         this.name = name;
@@ -19,7 +25,23 @@ public class Ingredient {
     	this.name = name;
     	this.description = description;
     	this.portion = portion;
-    	this.portionLabel = portionLabel;
+    	this.portion_label = portionLabel;
+    }
+
+    public String getPortion_label() {
+        return portion_label;
+    }
+
+    public void setPortion_label(String portion_label) {
+        this.portion_label = portion_label;
+    }
+
+    public String getStore_name() {
+        return store_name;
+    }
+
+    public void setStore_name(String store_name) {
+        this.store_name = store_name;
     }
     public void setName(String name) {
         this.name = name;
@@ -30,12 +52,13 @@ public class Ingredient {
     public void setPortion(float portion){
         this.portion = portion;
     }
-    public void setPortionLabel(String portionLabel){
-        this.portionLabel = portionLabel;
+    public void setMin_stock(float min_stock) {
+        this.min_stock = min_stock;
     }
-    public String getPortionLabel(){
-        return portionLabel;
+    public float getMin_stock() {
+        return min_stock;
     }
+
     public float getPortion(){
         return portion;
     }
@@ -49,6 +72,12 @@ public class Ingredient {
         return name + "\n" + description;
     }
     public String getRecipeDescription(){
-        return name + " - " + portion + " " + portionLabel;
+        return name + " - " + portion + " " + portion_label;
+    }
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

@@ -59,7 +59,7 @@ public class Recipe {
     	result = name + "\n";
     	
     	for(Ingredient ing : ingredients) {
-    		result += ing.getPortion() +" " + ing.getPortionLabel() + " de " + ing.getName() + "\n";
+    		result += ing.getPortion() +" " + ing.getPortion_label() + " de " + ing.getName() + "\n";
     	}
     	
     	result += instructions + "\n";
