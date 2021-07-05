@@ -15,44 +15,35 @@ public class Recipe {
     	ingredients = new LinkedList<Ingredient>();
     	this.name = name;
     }
-    
     public Recipe(LinkedList<Ingredient> ingredients) {
     	this.ingredients = ingredients;
     	this.name = "Receta nueva";
     }
-    
     public Recipe(String name, String instructions, LinkedList<Ingredient> ingredients) {
     	this.ingredients = ingredients;
     	this.instructions = instructions;
     }
-    
     public void setName(String name) {
     	this.name = name;
     }
-    
     public void setIngredients(LinkedList<Ingredient> ingredients){
         this.ingredients = ingredients;
     }
-
     public void setInstructions(String instructions){
         this.instructions = instructions;
     }
-    
     public String getName() {
     	return name;
     }
     public LinkedList<Ingredient> getIngredients(){
         return ingredients;
     }
-
     public String getInstructions(){
         return instructions;
     }
-    
     public void addIngredient(Ingredient ingredient) {
     	ingredients.add(ingredient);
     }
-    
     public String getFullDescription() {
     	String result;
     	

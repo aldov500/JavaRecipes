@@ -1,17 +1,31 @@
-import JavaRecipes.DataManager;
-
-// Prototipo 01 
-// Aplicacion que te otorga una lista de compras dependiendo de los platillos que elijas
-// Prototipo 02
-// Aplicacion que te otorga una lista de compras dependiendo de los platillos basado en tus productos actuales
+import Application.UI;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		UI cmdUI = new UI();
+		cmdUI.init();
+	}
 
-		DataManager d = new DataManager();
-		return;
+}
+
+//	DataManager dm = new DataManager();
+
+//	for(int i=0; i<100; i++){
+//		dm.insertIngredient("Cafe" + i ,"Bote de 1 kg",1.0f, "kilos","SAMS","important",2);
+//		dm.updateIngredient(i,"newname","",0f,"","","",0f);
+//		dm.deleteIngredient(i);
+//		dm.selectIngredient(i).getName();
+//		dm.disconnectDB();
+//	}
+
+//	for(Ingredient value:dm.selectAllIngredients()){
+//		System.out.println(value.getName());
+//	}
+
+
+//		DataManager d = new DataManager();/
+	//	return;
 
 		/*
 		Recipe caldoDePollo = new Recipe("Caldo de Pollo");
@@ -34,6 +48,6 @@ public class Main {
 
 		System.out.println(caldoDePollo.getFullDescription());
 		* */
-	}
+	//}
 
-}
+//}

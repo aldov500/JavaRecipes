@@ -27,19 +27,26 @@ public class Ingredient {
     	this.portion = portion;
     	this.portion_label = portionLabel;
     }
+    public Ingredient(String name, String description, float portion, String portion_label,String store_name,
+                      String category, float min_stock){
+        this.name = name;
+        this.description = description;
+        this.portion = portion;
+        this.portion_label = portion_label;
+        this.store_name = store_name;
+        this.category = category;
+        this.min_stock = min_stock;
 
+    }
     public String getPortion_label() {
         return portion_label;
     }
-
     public void setPortion_label(String portion_label) {
         this.portion_label = portion_label;
     }
-
     public String getStore_name() {
         return store_name;
     }
-
     public void setStore_name(String store_name) {
         this.store_name = store_name;
     }
@@ -58,7 +65,6 @@ public class Ingredient {
     public float getMin_stock() {
         return min_stock;
     }
-
     public float getPortion(){
         return portion;
     }
